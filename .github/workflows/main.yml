@@ -38,7 +38,7 @@ jobs:
       - name: python script
         run: |
           
-          python $file 2 20
+          python $file $first_num_1 $$first_num_2
           echo "input-num-1: $first_num_1"
           echo "input-num-2: $first_num_2"
       
