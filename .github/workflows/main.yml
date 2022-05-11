@@ -5,11 +5,11 @@ on:
       input-num-1:
         description: 'first-num'
         required: true
-        default: 'warning' 
+        default: 'input-value-1' 
       input-num-2:
         description: 'second-num'
         required: true
-        default: 'warning'
+        default: 'input-value-2'
   #push:
    # branches:
     #- main
