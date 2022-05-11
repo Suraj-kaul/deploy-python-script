@@ -1,7 +1,7 @@
 # PRIME NUMBER WITHIN RANGE
 
-first_number=int(input("ENTER YOUR FIRST NUMBER : "))
-last_number=int(input("ENTER YOUR LAST NUMBER : "))
+first_number = 1
+last_number = 20
 
 print("range of prime number are :")
 
