@@ -17,7 +17,6 @@ on:
 env:
   file: python.py 
   
-  
 
 
 jobs:
@@ -35,7 +34,7 @@ jobs:
       - name: python script
         run: |
           
-          python $file 3 15
+          python $file
       
       
       

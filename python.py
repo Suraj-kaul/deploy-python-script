@@ -1,9 +1,7 @@
 # PRIME NUMBER WITHIN RANGE
-import sys
-first_number = sys.argv[1]
-last_number = sys.argv[2]
 
-
+first_number = 1
+last_number = 20
 
 print("range of prime number are :")
 
