@@ -1,4 +1,4 @@
-name: deploy python script
+name: workflow-dispatch-inputs
 on:
   workflow_dispatch:
     inputs:
