@@ -35,7 +35,7 @@ jobs:
       - name: python script
         run: |
           
-          python $file
+          python $file 2 20
       
       
       
