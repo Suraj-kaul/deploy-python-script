@@ -1,7 +1,10 @@
 # PRIME NUMBER WITHIN RANGE
+import sys
+first_number = sys.argv[1]
+last_number = sys.argv[2]
 
-first_number = 1
-last_number = 20
+first_number = int(input("enter a num"))
+last_number =  int(input("enter a num"))
 
 print("range of prime number are :")
 
