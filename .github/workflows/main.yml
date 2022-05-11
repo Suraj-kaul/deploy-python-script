@@ -1,6 +1,15 @@
 name: deploy python script
 on:
   workflow_dispatch:
+    inputs:
+      input-num-1:
+        description: 'first-num'
+        required: true
+        default: 'warning' 
+      input-num-2:
+        description: 'second-num'
+        required: true
+        default: 'warning'
   #push:
    # branches:
     #- main
@@ -9,17 +18,11 @@ on:
   #pull_request:
     #branches:
     #- main  
-
-    
-
-
-    
-
 env:
   file: python.py 
+  first_num_1: ${{ github.event.inputs.input-num-1 }}
+  first_num_2: ${{ github.event.inputs.input-num-2 }}
   
-
-
 jobs:
   check-python-version:
     runs-on: ubuntu-latest
@@ -36,6 +39,8 @@ jobs:
         run: |
           
           python $file 2 20
+          echo "input-num-1: $first_num_1"
+          echo "input-num-2: $first_num_2"
       
       
       
