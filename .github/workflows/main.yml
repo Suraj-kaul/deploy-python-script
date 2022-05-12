@@ -5,10 +5,12 @@ on:
       input-num-1:
         description: 'first-num'
         required: true
+        default: 'first'
       
       input-num-2:
         description: 'second-num'
         required: true
+        default: 'first'
         
   #push:
    # branches:
