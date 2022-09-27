@@ -22,10 +22,11 @@ on:
   #pull_request:
     #branches:
     #- main  
-#env:
-  #file: python.py 
-  #first_num_1: ${{ github.event.inputs.input-num-1 }}
-  #first_num_2: ${{ github.event.inputs.input-num-2 }}
+env:
+  file: python.py 
+  file1: Document.py
+  first_num_1: ${{ github.event.inputs.input-num-1 }}
+  first_num_2: ${{ github.event.inputs.input-num-2 }}
   
 jobs:
   check-python-version:
@@ -42,8 +43,8 @@ jobs:
       - name: python script
         run: |
           
-          python python.py  ${{ github.event.inputs.input-num-1 }} ${{ github.event.inputs.input-num-2 }}
-          python Document.py  ${{ github.event.inputs.input-num-1 }} ${{ github.event.inputs.input-num-2 }}
+          python $file  $first_num_1 $first_num_2
+          python $file1  $first_num_1 $first_num_2
           
       
       
