@@ -43,6 +43,7 @@ jobs:
         run: |
           
           python python.py  ${{ github.event.inputs.input-num-1 }} ${{ github.event.inputs.input-num-2 }}
+          python Document.py  ${{ github.event.inputs.input-num-1 }} ${{ github.event.inputs.input-num-2 }}
           
       
       
