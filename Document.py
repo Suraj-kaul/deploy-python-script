@@ -5,4 +5,4 @@ b= int(sys.argv[2])
 sum = a + b
  
 
-print(sum)
+print("sum",sum)
